@@ -88,7 +88,7 @@ section .login {
 .filme-principal{
     font-size: 14px;
 
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/rickanmorty.jpg'); 
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('https://media.giphy.com/media/q9KaEjVuKcpl6/giphy.gif'); 
     height: 670px;
     background-size: cover;
 
