@@ -1,0 +1,173 @@
+:root{
+    --rosa: #F46197;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elemento base*/
+
+body{
+    background-color: var(--preto);
+    font-family: 'Arial';
+    color:white;
+}
+
+header .container{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     height: 80px;
+     position: absolute;
+     width: 100%;
+     top: 0;
+}
+
+
+header .logo{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: var(--rosa);
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('Bebas Neue.ttf') format('truetype');
+  }
+
+header nav a{
+    text-decoration: none;
+    font-family: 'Arial';
+    font-size: 15px;
+    color: whitesmoke;
+    margin-right: 50px;
+    align-items: flex-start;
+}
+
+
+.menu{
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+.menu:hover{
+     font-family: "Arial black";
+}
+
+section .login {
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: black;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.login:hover{
+    background-color: var(--rosa);
+    color: white;
+}
+
+/* filme principal*/
+.filme-principal{
+    font-size: 14px;
+
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/rickanmorty.jpg'); 
+    height: 670px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse{
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    z-index: 3;
+    position: relative;
+    font-size: 18px;
+}
+
+.titulo{
+    height: 199px;
+    margin-left: 40px;
+}
+
+.infos {
+ font-family: Arial;
+ font-size: 13px;
+ margin-left: 40px;
+ margin-top: 4px;
+}
+
+.botao{
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-left: 40px;
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: var(--preto);
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: var(--rosa);
+    color: white;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.recomendados{ 
+    margin-top: -60px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.mais-assistidos{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+.box-filme{
+    height: 170px;
+    width: 250px;
+    display: block;
+    border-radius: 2px;
+}
+
+.carrosel-filmes{
+    margin-top: 8px;
+}
